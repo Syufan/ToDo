@@ -64,7 +64,7 @@ repos:
         entry: bash
         args:
           - -lc
-          - cd server && dotnet format --verify-no-changes
+          - cd server && dotnet format --verify-no-changes --verbosity diagnostic
         language: system
         pass_filenames: false
         files: ^server/.*\.(cs|csproj)$
