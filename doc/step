@@ -1,11 +1,11 @@
 1. create backend and frontend
-2.  npx create-react-app client --template typescript
+2. npx create-react-app client --template typescript
     dotnet new webapi -o server
 3. add proxy for development "proxy": "https://localhost:5001",
 4. use backend
     cd server
     dotnet run
-5. use frontend 
+5. use frontend
     cd client
     npm start
 
@@ -15,3 +15,10 @@ git merge origin/main
 
 delete added file
 git restore --staged doc/
+
+change something tiny — like a whitespace fix, formatting tweak, or missed file
+git commit --amend --no-edit
+git push --force
+
+check the format
+pre-commit run -all-files

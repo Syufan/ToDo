@@ -11,15 +11,32 @@ repos:
     rev: v5.0.0
     hooks:
       - id: trailing-whitespace
+        exclude: |
+          (?x)^
+          (
+            client/src/logo\.svg|
+            server/obj/
+          )
       - id: end-of-file-fixer
+        exclude: |
+          (?x)^
+          (
+            client/src/logo\.svg|
+            server/obj/
+          )
       - id: check-added-large-files
         args: [--maxkb=1000]
+        exclude: |
+          (?x)^
+          (
+            client/src/logo\.svg|
+            server/obj/
+          )
       - id: check-merge-conflict
       - id: detect-aws-credentials
         args:
             - --allow-missing-credentials
       - id: detect-private-key
-      - id: debug-statements
       - id: check-yaml
       - id: check-xml
 
@@ -29,12 +46,6 @@ repos:
       - id: prettier
         additional_dependencies: [prettier, prettier-plugin-tailwindcss]
         files: ^client/(public|src)/.*\.(css|html|js|jsx|json|md|scss|ts|tsx|yaml|yml)$
-
-  - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.41.0
-    hooks:
-      - id: markdownlint
-        files: ^(README|doc/).*\.md$
 
   - repo: local
     hooks:
