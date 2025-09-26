@@ -6,5 +6,10 @@ Function
 2. add todo
 3. delete todo
 
+Stack:
+Frontend: react
+Backend: .netcore
+
 Things need todo
 1. configure the background and frontend
+2. configure the CI

@@ -9,3 +9,9 @@
     cd client
     npm start
 
+
+merge mian to subbranch
+git merge origin/main
+
+delete added file
+git restore --staged doc/
