@@ -1,0 +1,8 @@
+feat: A new feature
+fix: A bug fix
+docs: Documentation only changes
+style: Formatting, whitespace, missing semi-colons, etc. (no code logic changes)
+refactor: A code change that neither fixes a bug nor adds a feature
+test: Adding or updating tests
+ci: Changes to CI configuration files and scripts
+chore: Other changes that don’t modify src/test files
