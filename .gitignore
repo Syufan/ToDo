@@ -1,0 +1,21 @@
+# Global ignores for the repo
+
+# macOS
+.DS_Store
+
+# Node.js (frontend has its own .gitignore but keep root clean)
+client/node_modules/
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+
+# .NET build outputs
+server/bin/
+server/obj/
+
+# Logs and coverage
+*.log
+coverage/
+
+# Python virtual envs
+.venv/
