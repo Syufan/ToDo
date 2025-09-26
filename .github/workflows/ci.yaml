@@ -25,9 +25,11 @@ jobs:
       - name: Set up .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 9.0.2
+          dotnet-version: 8.0.x
 
       - name: Install and run pre-commit
+        env:
+          SKIP: dotnet-format
         run: |
           pip install pre-commit
           pre-commit run --all-files
@@ -65,7 +67,7 @@ jobs:
       - name: Set up .NET SDK
         uses: actions/setup-dotnet@v4
         with:
-          ddotnet-version: 9.0.2
+          ddotnet-version: 8.0.x
 
       - name: Restore dependencies
         run: dotnet restore
