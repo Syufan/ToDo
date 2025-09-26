@@ -13,3 +13,6 @@ Backend: .netcore
 Things need todo
 1. configure the background and frontend
 2. configure the CI
+
+How to run
+pip install pre-commit
