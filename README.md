@@ -17,3 +17,13 @@ Things need todo
 
 How to run
 pip install pre-commit
+
+## Domain Diagram
+
+```mermaid
+classDiagram
+    class TodoItem {
+        int id
+        string title
+    }
+```

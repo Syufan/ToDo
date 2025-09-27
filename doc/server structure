@@ -1,0 +1,36 @@
+Controllers:
+Home to API controllers, responsible for handling HTTP requests and generating responses.
+
+Models:
+Houses data models or DTOs (Data Transfer Objects) representing the data within the application.
+
+Services:
+Contains business logic or service layer components, encapsulating application-specific functionality.
+
+Data:
+Encompasses the data access layer, including repositories for interacting with the database and the Entity Framework DbContext.
+
+Middleware:
+Stores custom middleware components used to process HTTP requests and responses.
+
+Helpers:
+Contains utility classes or helper methods providing common functionality across the application.
+
+Extensions:
+Houses extension methods, typically used to extend existing classes or interfaces.
+
+Migrations:
+Contains Entity Framework Migrations for managing database schema changes.
+
+Configuration Files:
+Includes configuration files such as appsettings.json for storing application settings.
+
+Program.cs and Startup.cs:
+Entry point and startup configuration files for the application.
+
+Name rule:
+PascalCase: Namespaces, Class names, Structs, Records, Methods, Properties, Constants
+Every word starts with a capital letter. No underscores, no spaces.
+
+camelCase: Local variables, Method parameters, Private fields, Static fields
+First word starts lowercase, every following word starts with a capital.
