@@ -12,6 +12,8 @@ client/yarn-error.log*
 # .NET build outputs
 server/bin/
 server/obj/
+server.Tests/bin/
+server.Tests/obj/
 
 # Logs and coverage
 *.log
