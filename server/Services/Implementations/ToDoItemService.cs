@@ -17,8 +17,11 @@ public class ToDoItemService : IToDoItemService
         return false;
     }
 
-    public bool AddToDoItem(ToDoItem item)
+    public ToDoItem AddToDoItem(string title)
     {
-        return false;
+        var id = Interlocked.Increment(ref _id);
+        var item = new ToDoItem { Id = id, Title = title };
+        dicToDoItems.Add(id, item);
+        return item;
     }
 }

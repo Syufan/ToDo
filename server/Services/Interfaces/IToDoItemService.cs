@@ -6,5 +6,5 @@ public interface IToDoItemService
 {
     List<ToDoItem> GetToDoItems();
     bool DeleteToDoItem(int id);
-    bool AddToDoItem(ToDoItem item);
+    ToDoItem AddToDoItem(string title);
 }

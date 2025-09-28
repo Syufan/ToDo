@@ -14,4 +14,13 @@ public class UToDoItemService
 
         items.Should().BeEmpty();
     }
+
+    [Fact]
+    public void List_One_Return()
+    {
+        var service = new ToDoItemService();
+        service.AddToDoItem("Buy milk");
+        var items = service.GetToDoItems();
+        items.Should().ContainSingle(i => i.Title == "Buy milk");
+    }
 }
