@@ -8,6 +8,8 @@
 5. use frontend
     cd client
     npm start
+6. create test file
+    dotnet new xunit -n server.Tests
 
 
 merge mian to subbranch
