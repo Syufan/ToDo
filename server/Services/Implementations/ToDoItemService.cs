@@ -14,6 +14,11 @@ public class ToDoItemService : IToDoItemService
 
     public bool DeleteToDoItem(int id)
     {
+        if (dicToDoItems.ContainsKey(id))
+        {
+            dicToDoItems.Remove(id);
+            return true;
+        }
         return false;
     }
 
