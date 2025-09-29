@@ -10,6 +10,7 @@
     npm start
 6. create test file
     dotnet new xunit -n server.Tests
+7. create controller
 
 
 merge mian to subbranch
