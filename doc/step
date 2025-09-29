@@ -10,8 +10,7 @@
     npm start
 6. create test file
     dotnet new xunit -n server.Tests
-7. create controller
-
+7. imple function add delete remove and tests
 
 merge mian to subbranch
 git merge origin/main
