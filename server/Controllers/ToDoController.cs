@@ -42,7 +42,7 @@ public class TodoController : ControllerBase
         var item = _toDoItemService.AddToDoItem(title);
         var dtoItem = new DTOToDoItem();
         dtoItem = item.ToDto();
-        return Ok(dtoItem);
+        return Created(string.Empty, dtoItem);
     }
 
     [HttpDelete]

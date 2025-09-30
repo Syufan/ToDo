@@ -25,7 +25,7 @@ public class ToDoItemService : IToDoItemService
     public ToDoItem AddToDoItem(string title)
     {
         var id = Interlocked.Increment(ref _id);
-        var item = new ToDoItem { Id = id, Title = title?.Trim() };
+        var item = new ToDoItem { Id = id, Title = title.Trim() };
         dicToDoItems.Add(id, item);
         return item;
     }
